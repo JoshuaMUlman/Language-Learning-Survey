@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="main-div">
+
+        <div id="title">
+            <h1>Language Learning Survey</h1>
+        </div>
+        <div id="description">
+            <p>Thank you for taking the time to answer this survey.</p>
+        </div>
+
+        <form id="survey-form">
+
+            <div id="name-input">
+                <div id="name-label">Name:</div>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+
+            <div id="email-input">
+                <div id="email-label">Email:</div>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <div id="number-input">
+                <div id="number-label">Age: (optional)</div>
+                <input type="number" id="number" placeholder="Age" min="1" max="120">
+            </div>
+
+            <div id="language-number">
+                Number of Languages Learned:<br>
+                <select name="languages-learned" id="dropdown">
+                    <option value="one">One Language</option>
+                    <option value="two">Two Languages</option>
+                    <option value="three">Three Languages</option>
+                    <option value="more">More Than Three Languages</option>
+                </select>
+            </div>
+
+            <div id="studied">
+                How long have you studied for?<br>
+                <label for="less-than-a-year"><input id="less-than-a-year" type="radio" name="time-spent" checked="checked">Less Than A Year</label><br>
+                <label for="year"><input id="year" type="radio" name="time-spent">A Year</label><br>
+                <label for="2-years"><input id="2-years" type="radio" name="time-spent">2 Years</label><br>
+                <label for="3-years"><input id="3-years" type="radio" name="time-spent">3 Years</label><br>
+                <label for="5-years"><input id="5-years" type="radio" name="time-spent">5 Years</label><br>
+                <label for="10-years"><input id="10-years" type="radio" name="time-spent">10 Years or More</label><br>
+            </div>
+
+            <div id="methods">
+                What methods have you tried? (Check all that apply)<br>
+                <input type="checkbox" name="choice1" value="classroom">
+                <label for="choice1"> Classroom Study</label><br>
+                <input type="checkbox" name="choice2" value="speak-early">
+                <label for="choice2"> Speak Early Study</label><br>
+                <input type="checkbox" name="choice3" value="input">
+                <label for="choice3"> Input Based Approach</label><br>
+                <input type="checkbox" name="choice4" value="grammar">
+                <label for="choice4"> Personal Grammar Study</label><br>
+            </div>
+
+            Anything else about your experience you would like to say?<br>
+            <textarea name="feedback" rows="4" cols="92"></textarea><br>
+
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
